@@ -40,7 +40,7 @@ const putUsuarios = async (req, res = response) => {
     const usuario = await Usuario.findByIdAndUpdate(id, resto);
 
     res.status(200).json({
-        msg: 'Usuario Actualizado Exitosamente!!!',
+        msg: 'Usuario Actualizado Exitosament',
         usuario
     });
 }
@@ -50,7 +50,7 @@ const usuariosDelete = async (req, res) => {
     const usuario = await Usuario.findByIdAndUpdate(id, { estado: false });
 
     res.status(200).json({
-        msg: 'Usuario eliminado exitosamente!!!',
+        msg: 'Usuario eliminado exitosamente',
         usuario
     });
 }
